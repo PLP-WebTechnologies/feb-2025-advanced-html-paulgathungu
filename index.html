@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms and tables</title>
+</head>
+<body>
+  <header>
+    <h1>kenyan scenery</h1>
+  </header>
+  
+  <main>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+      <h2>Kenyan Highlights</h2>
+      <ol type="I">
+        <li>Safari Adventures</li>
+        <li>Wildlife Festivals</li>
+        <li>Scenic Landscapes</li>
+      </ol>
+    </section>
+    
+    <!-- External Image from pexels.com -->
+    <section>
+      <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Scenic view in Kenya" width="600">
+    </section>
+    
+    <!-- Table of Kenyan Contacts -->
+    <section>
+      <h2>Contact List</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Mwangi</td>
+            <td>Ngara, Nairobi</td>
+            <td>+254712345678</td>
+            <td>john.mwangi@example.co.ke</td>
+          </tr>
+          <tr>
+            <td>Jane Wambui</td>
+            <td>Mvita, Mombasa</td>
+            <td>+254723456789</td>
+            <td>jane.wambui@example.co.ke</td>
+          </tr>
+          <tr>
+            <td>Peter Kamau</td>
+            <td>Milimani, Kisumu</td>
+            <td>+254734567890</td>
+            <td>peter.kamau@example.co.ke</td>
+          </tr>
+          <tr>
+            <td>Alice Njeri</td>
+            <td>Nakuru Town, Nakuru</td>
+            <td>+254745678901</td>
+            <td>alice.njeri@example.co.ke</td>
+          </tr>
+          <tr>
+            <td>David Otieno</td>
+            <td>Eldoret, Uasin Gishu</td>
+            <td>+254756789012</td>
+            <td>david.otieno@example.co.ke</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <!-- Personal Information Fieldset -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <!-- Name Field -->
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          
+          <!-- Email Field -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.co.ke" required>
+          </div>
+          
+          <!-- Password Field -->
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+          </div>
+          
+          <!-- Date Field -->
+          <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+        </fieldset>
+        
+        <!-- Preferences Fieldset -->
+        <fieldset>
+          <legend>Preferences</legend>
+          
+          <!-- Dropdown for County Selection -->
+          <div>
+            <label for="county">County:</label>
+            <select id="county" name="county" required>
+              <option value="">Select your county</option>
+              <option value="nairobi">Nairobi</option>
+              <option value="mombasa">Mombasa</option>
+              <option value="kisumu">Kisumu</option>
+              <option value="nakuru">Nakuru</option>
+              <option value="meru">Meru</option>
+            </select>
+          </div>
+          
+          <!-- Radio Buttons for Gender -->
+          <div>
+            <p>Gender:</p>
+            <label>
+              <input type="radio" name="gender" value="male" required>
+              Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female">
+              Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other">
+              Other
+            </label>
+          </div>
+          
+          <!-- Checkboxes for Interests -->
+          <div>
+            <p>Select your interests:</p>
+            <label>
+              <input type="checkbox" name="interests" value="safari">
+              Adventure
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="culture">
+              Culture
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="food">
+              Food
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="music">
+              Music
+            </label>
+          </div>
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <div>
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy;week 2 assignment</p>
+  </footer>
+</body>
+</html>
